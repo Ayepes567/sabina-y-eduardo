@@ -1,0 +1,43 @@
+html{
+    height: 100%;
+    background: rgb(148,185,255);
+}
+
+body{
+    font-family: 'Playwrite ES Deco', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    background: linear-gradient(169deg, rgba(148,185,255,1) 1%, rgba(205,255,216,1) 40%);
+}
+
+p, h3{
+    font-family: 'Playwrite ES Deco', sans-serif;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: none; /* Optional: Remove default card border */
+    border-radius: 10px; /* Optional: Add border radius */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.btn-overlay {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the button is above the card content */
+}
